@@ -8,7 +8,7 @@ public class Lab_06_01_CtoFConverter {
         double fahTemp = 0;
         int boilPoint = 212;
         int freezPoint = 32;
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat("#.00");
         Scanner in = new Scanner(System.in);
         System.out.print("What is the temperature in Celsius? ");
         if (in.hasNextDouble()) {
@@ -25,6 +25,7 @@ public class Lab_06_01_CtoFConverter {
             }
         }
         else {
+            trash.equals(in.nextLine());
             System.out.println("Invalid Entry. Please try again");
         }
     }
