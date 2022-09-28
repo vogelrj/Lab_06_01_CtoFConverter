@@ -16,9 +16,11 @@ public class Lab_06_01_CtoFConverter {
             fahTemp = (celTemp * 1.8) + 32;
             if (fahTemp >= boilPoint) {
                 System.out.println("The temperature in Fahrenheit is " + df.format(fahTemp) + ". That is boiling.");
-            } else if (fahTemp <= freezPoint) {
+            }
+            else if (fahTemp <= freezPoint) {
                 System.out.println("The temperature in Fahrenheit is " + df.format(fahTemp) + ". That is freezing.");
-            } else {
+            }
+            else {
                 System.out.println("The temperature in Fahrenheit is " + df.format(fahTemp) + ".");
             }
         }
