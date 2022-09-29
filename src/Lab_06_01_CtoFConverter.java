@@ -13,6 +13,7 @@ public class Lab_06_01_CtoFConverter {
         System.out.print("What is the temperature in Celsius? ");
         if (in.hasNextDouble()) {
             celTemp = in.nextDouble();
+            in.nextLine();
             fahTemp = (celTemp * 1.8) + 32;
             if (fahTemp >= boilPoint) {
                 System.out.println("The temperature in Fahrenheit is " + df.format(fahTemp) + ". That is boiling.");
